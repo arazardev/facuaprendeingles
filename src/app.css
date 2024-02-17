@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+}
+
