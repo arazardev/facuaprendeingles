@@ -41,7 +41,7 @@
     </div>
     <h1 class="text-3xl uppercase font-mono font-bold">{phrase.question}</h1>
     <h2>{phrase.condition}</h2>
-    <input class="font-mono text-3xl rounded-xl text-center"  type="text" bind:value={wordTried}/>
+    <textarea class="font-mono text-3xl rounded-xl text-center" bind:value={wordTried}/>
     <button class="rounded-xl mt-3 mb-3 bg-black text-white p-3" type="submit">Validate</button>
 </form>
 

@@ -5,8 +5,8 @@
     import { prepositions } from "$lib/constants/prepositions";
 	// import PhraseGuesser from "$lib/ui/PhraseGuesser.svelte";
     // import { positiveWearPhrase, negativeWearPhrase, interrogativeWearPhrase } from "$lib/generators/phrases";
-    // import Qa from "$lib/ui/QA.svelte";
-    // import { qaWear } from "$lib/constants/phrases";
+    import Qa from "$lib/ui/QA.svelte";
+    import { qaPrepositions } from "$lib/constants/phrases";
 
 </script>
 
@@ -31,10 +31,10 @@
     </Card>
     <Card titleSpanish="Vestir?" titleEnglish="Wear?">
         <PhraseGuesser phraseGenerator={interrogativeWearPhrase} />
-    </Card>
+    </Card>-->
     <Card titleSpanish="Preguntas y respuestas" titleEnglish="QA">
-        <Qa qas={qaWear} />
-    </Card> -->
+        <Qa qas={qaPrepositions} />
+    </Card> 
 </section>
 
 <style>

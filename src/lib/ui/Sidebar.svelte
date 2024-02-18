@@ -7,17 +7,27 @@
         <a href="/exercises/chapter_4">Chapter 4</a>
         <!-- <a href="/exercises/chapter_5">Chapter 5</a>
         <a href="/exercises/chapter_6">Chapter 6</a> -->
-    </ul>
-    <!-- <h1>Lectures</h1>
+    </ul>    
+    <h1>Dictionary</h1>
     <ul>
-        <a href="/lectures/chapter_1">Chapter 1</a>
-        <a href="/lectures/chapter_2">Chapter 2</a>
-        <a href="/lectures/chapter_3">Chapter 3</a>
-        <a href="/lectures/chapter_4">Chapter 4</a>     
-        <a href="/lectures/chapter_5">Chapter 5</a>     
-        <a href="/lectures/chapter_6">Chapter 6</a>
+        <!-- <a href="/lectures/chapter_1">Chapter 1</a> -->
+        <!-- <a href="/lectures/chapter_2">Chapter 2</a>
+        <a href="/lectures/chapter_3">Chapter 3</a> -->
+        <a href="/dictionary/chapter_4">Chapter 4</a>     
+        <!-- <a href="/lectures/chapter_5">Chapter 5</a>     
+        <a href="/lectures/chapter_6">Chapter 6</a> -->
     </ul>
-    <h1>Exams</h1>
+
+    <!-- <h1>Lectures</h1>
+    <ul> -->
+        <!-- <a href="/lectures/chapter_1">Chapter 1</a> -->
+        <!-- <a href="/lectures/chapter_2">Chapter 2</a>
+        <a href="/lectures/chapter_3">Chapter 3</a> -->
+        <!-- <a href="/lectures/chapter_4">Chapter 4</a>      -->
+        <!-- <a href="/lectures/chapter_5">Chapter 5</a>     
+        <a href="/lectures/chapter_6">Chapter 6</a> -->
+    <!-- </ul> -->
+    <!-- <h1>Exams</h1>
     <ul>
         <a href="/exams/chapter_1">Chapter 1</a>
         <a href="/exams/chapter_2">Chapter 2</a>
