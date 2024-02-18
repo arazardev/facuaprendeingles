@@ -1,10 +1,8 @@
 <script lang="ts">
-    export let words: Array<Word>
+    import {type Word} from "$lib/interfaces/word"
 
-    interface Word{
-        spanish:string,
-        english:string
-    }
+    export let words: Array<Word>
+    
 
     function validateWord (){
         if (wordTried === word.english){
@@ -32,20 +30,20 @@
 
 </script>
 
-<section>
+<form on:submit|preventDefault={validateWord}>
     <span> Puntaje: {count}</span>
     <div>
         {#if success === 1}
-        <h2 class="text-green-500">¡Muy Bien!</h2>
+        <h2 class="success">¡Muy Bien!</h2>
         {:else if success==2}
-        <h2 class="text-red-500">Intentá de nuevo :D</h2>
+        <h2 class="miss">Intentá de nuevo :D</h2>
         {/if}
     </div>
     <h1 class="text-3xl w-1/2 uppercase font-mono font-bold">{word.spanish}</h1>
-    <input class="font-mono text-3xl w-1/2 rounded-xl text-center" type="text" bind:value={wordTried}/>
-    <button class="rounded-xl mt-3 mb-3 bg-black text-white p-3" on:click={validateWord}>Validar</button>
+    <input class="font-mono text-3xl w-1/2 rounded-xl text-center"  type="text" bind:value={wordTried}/>
+    <button class="rounded-xl mt-3 mb-3 bg-black text-white p-3" type="submit">Validate</button>
 
-</section>
+</form>
 
 <style>
 
@@ -62,11 +60,19 @@
     }
 
     h2{
-        font-size: xx-large;
+        font-size: x-large;
     }
 
-    section{
-        background-color: antiquewhite;
+    h2.success{
+        color:darkgreen;
+    }
+
+    h2.miss{
+        color:brown;
+    }
+
+    form{
+        background-color: #9CCEF4;
         display: grid;
         grid-template-rows: repeat(4,1fr);
         grid-template-columns: 1fr;

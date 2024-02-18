@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 body{
-    background-color: black;
+    background-color: #28384f;
     display: grid;
     grid-template-columns: 1fr 11fr;
 }
-
