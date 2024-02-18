@@ -1,10 +1,11 @@
 <script lang="ts">
-    import  { type Phrase } from "$lib/interfaces/phrase";
-    export let phraseGenerator: (()=> Phrase)
+    import  { type QA } from "$lib/interfaces/qa";
+    import { randomItem } from "$lib/utils/utils";
+    export let qas: Array<QA>
     
 
     function validateWord (){
-        if (wordTried === phrase.english){
+        if (wordTried === phrase.answer){
             success = 1
             count += 1
             wordTried = ""
@@ -18,14 +19,14 @@
     }
 
     function newPhrase(){
-        phrase = phraseGenerator()
+        phrase = randomItem(qas)
     }
 
     let count = 0
 
     let success = 0
     let wordTried: string
-    let phrase: Phrase = phraseGenerator()
+    let phrase: QA = randomItem(qas)
 
 </script>
 
@@ -38,7 +39,8 @@
         <h2 class="miss">Try again :D</h2>
         {/if}
     </div>
-    <h1 class="text-3xl uppercase font-mono font-bold">{phrase.spanish}</h1>
+    <h1 class="text-3xl uppercase font-mono font-bold">{phrase.question}</h1>
+    <h2>{phrase.condition}</h2>
     <input class="font-mono text-3xl rounded-xl text-center"  type="text" bind:value={wordTried}/>
     <button class="rounded-xl mt-3 mb-3 bg-black text-white p-3" type="submit">Validate</button>
 </form>

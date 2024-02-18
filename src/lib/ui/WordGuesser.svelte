@@ -8,11 +8,12 @@
         if (wordTried === word.english){
             success = 1
             count += 1
+            wordTried = ""
             newWord()
         } else {
             success = 2
         }
-        wordTried = ""
+        
         setTimeout(()=>{
             success = 0
         },3000)
@@ -34,9 +35,9 @@
     <span> Puntaje: {count}</span>
     <div>
         {#if success === 1}
-        <h2 class="success">¡Muy Bien!</h2>
+        <h2 class="success">Very good!</h2>
         {:else if success==2}
-        <h2 class="miss">Intentá de nuevo :D</h2>
+        <h2 class="miss">Try again :D</h2>
         {/if}
     </div>
     <h1 class="text-3xl w-1/2 uppercase font-mono font-bold">{randomItem(word.spanish)}</h1>

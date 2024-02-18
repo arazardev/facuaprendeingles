@@ -1,22 +1,22 @@
 import { type Word } from "$lib/interfaces/word";
 
 export const clothes: Array<Word> = [
-    {"english": "jacket", "spanish": ["chaqueta"]},
-    {"english": "shirt", "spanish": ["camisa"]},
-    {"english": "t-shirt", "spanish": ["remera"]},
-    {"english": "pants", "spanish": ["pantalones"]},
-    {"english": "dress", "spanish": ["vestido"]},
-    {"english": "skirt", "spanish": ["falda"]},
-    {"english": "shoes", "spanish": ["zapatos"]},
-    {"english": "socks", "spanish": ["calcetines"]},
-    {"english": "hat", "spanish": ["sombrero"]},
-    {"english": "gloves", "spanish": ["guantes"]},
-    {"english": "scarf", "spanish": ["bufanda"]},
-    {"english": "coat", "spanish": ["abrigo"]},
-    {"english": "tie", "spanish": ["corbata"]},
-    {"english": "boots", "spanish": ["botas"]},
-    {"english": "sweater", "spanish": ["suéter"]},
-    {"english": "jeans", "spanish": ["vaqueros"]}
+    {english: "jacket", spanish: ["chaqueta"]},
+    {english: "shirt", spanish: ["camisa"]},
+    {english: "t-shirt", spanish: ["remera"]},
+    {english: "pants", spanish: ["pantalones"]},
+    {english: "dress", spanish: ["vestido"]},
+    {english: "skirt", spanish: ["falda"]},
+    {english: "shoes", spanish: ["zapatos"]},
+    {english: "socks", spanish: ["calcetines"]},
+    {english: "hat", spanish: ["sombrero"]},
+    {english: "gloves", spanish: ["guantes"]},
+    {english: "scarf", spanish: ["bufanda"]},
+    {english: "coat", spanish: ["abrigo"]},
+    {english: "tie", spanish: ["corbata"]},
+    {english: "boots", spanish: ["botas"]},
+    {english: "sweater", spanish: ["suéter"]},
+    {english: "jeans", spanish: ["vaqueros"]}
 ]
 
 export const seasons: Array<Word>=[
@@ -27,16 +27,16 @@ export const seasons: Array<Word>=[
 ]
 
 export const weather: Array<Word>=[
-    {"english": "sunny", "spanish": ["soleado"]},
-    {"english": "cloudy", "spanish": ["nublado"]},
-    {"english": "rainy", "spanish": ["lluvioso"]},
-    {"english": "windy", "spanish": ["ventoso"]},
-    {"english": "stormy", "spanish": ["tormentoso"]},
-    {"english": "snowy", "spanish": ["nevado"]},
-    {"english": "foggy", "spanish": ["neblinoso"]},
-    {"english": "clear", "spanish": ["despejado"]},
-    {"english": "overcast", "spanish": ["cubierto"]},
-    {"english": " ", "spanish": ["helado"]}
+    {english: "sunny", spanish: ["soleado"]},
+    {english: "cloudy", spanish: ["nublado"]},
+    {english: "rainy", spanish: ["lluvioso"]},
+    {english: "windy", spanish: ["ventoso"]},
+    {english: "stormy", spanish: ["tormentoso"]},
+    {english: "snowy", spanish: ["nevado"]},
+    {english: "foggy", spanish: ["neblinoso"]},
+    {english: "clear", spanish: ["despejado"]},
+    {english: "overcast", spanish: ["cubierto"]},
+    {english: " ", spanish: ["helado"]}
 ]
 
 export const colors: Array<Word> = [
@@ -99,4 +99,40 @@ export const numbers1to20:Array<Word>=[
     {english:"eight",spanish: ["ocho"]},
     {english:"nine",spanish: ["nueve"]},
     {english:"ten",spanish: ["diez"]}
+]
+
+export const houseParts: Array<Word>=[
+    {english: "kitchen", spanish: ["cocina"]},
+    {english: "living room", spanish: ["sala de estar"]},
+    {english: "bedroom", spanish: ["dormitorio"]},
+    {english: "bathroom", spanish: ["baño"]},
+    {english: "dining room", spanish: ["comedor"]},
+    {english: "garage", spanish: ["garaje"]},
+    {english: "attic", spanish: ["ático"]},
+    {english: "basement", spanish: ["sótano"]},
+    {english: "hallway", spanish: ["pasillo"]},
+    {english: "staircase", spanish: ["escalera"]},
+    {english: "balcony", spanish: ["balcón"]},
+    {english: "garden", spanish: ["jardín"]},
+    {english: "roof", spanish: ["techo"]},
+    {english: "window", spanish: ["ventana"]},
+    {english: "door", spanish: ["puerta"]}
+]
+
+export const furtnitures: Array<Word> = [
+    {english: "sofa", spanish: ["sofá"]},
+    {english: "table", spanish: ["mesa"]},
+    {english: "chair", spanish: ["silla"]},
+    {english: "bed", spanish: ["cama"]},
+    {english: "wardrobe", spanish: ["armario"]},
+    {english: "desk", spanish: ["escritorio"]},
+    {english: "bookcase", spanish: ["estantería"]},
+    {english: "dresser", spanish: ["cómoda"]},
+    {english: "couch", spanish: ["diván"]},
+    {english: "nightstand", spanish: ["mesilla", "de", "noche"]},
+    {english: "lamp", spanish: ["lámpara"]},
+    {english: "mirror", spanish: ["espejo"]},
+    {english: "shelf", spanish: ["estante"]},
+    {english: "ottoman", spanish: ["puf"]},
+    {english: "rug", spanish: ["alfombra"]}
 ]
