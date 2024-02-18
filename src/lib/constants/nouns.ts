@@ -61,7 +61,7 @@ export const months: Array<Word> = [
     {english:"april",spanish: ["abril"]},
     {english:"may",spanish: ["mayo"]},
     {english:"june",spanish: ["junio"]},
-    {english:"jule",spanish: ["julio"]},
+    {english:"july",spanish: ["julio"]},
     {english:"august",spanish: ["agosto"]},
     {english:"september",spanish: ["septiembre"]},
     {english:"october",spanish: ["octubre"]},
