@@ -2,6 +2,8 @@
 	import Card from "$lib/ui/Card.svelte";
 	import WordGuesser from "$lib/ui/WordGuesser.svelte";
     import {months,colors,weekdays} from "$lib/constants/nouns"
+    import { positiveHavePhrase, negativeHavePhrase, interrogativeHavePhrase } from "$lib/generators/phrases";
+	import PhraseGuesser from "$lib/ui/PhraseGuesser.svelte";
 
 </script>
 
@@ -17,10 +19,19 @@
     <Card titleSpanish="Dias de la semana" titleEnglish="Weekdays">
         <WordGuesser words={weekdays}></WordGuesser>
     </Card>
+
+    <Card titleSpanish="Tener+" titleEnglish="Have">
+        <PhraseGuesser phraseGenerator={positiveHavePhrase} />
+    </Card>
+    <Card titleSpanish="Tener-" titleEnglish="Haven't">
+        <PhraseGuesser phraseGenerator={negativeHavePhrase} />
+    </Card>
+    <Card titleSpanish="Tener?" titleEnglish="Have?">
+        <PhraseGuesser phraseGenerator={interrogativeHavePhrase} />
+    </Card>
 </section>
 
 <style>
-
     section{
         display: grid;
         gap: 10px;
@@ -28,6 +39,4 @@
         grid-template-rows: repeat(3,1fr);
         background: #283E4F;
     }
-
-    
 </style>

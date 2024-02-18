@@ -1,4 +1,4 @@
 export interface Word{
-    spanish:string,
-    english:string
+    english:string,
+    spanish:Array<String>
 }
