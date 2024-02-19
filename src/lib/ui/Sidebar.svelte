@@ -5,8 +5,8 @@
         <a href="/exercises/chapter_2">Chapter 2</a>
         <a href="/exercises/chapter_3">Chapter 3</a>
         <a href="/exercises/chapter_4">Chapter 4</a>
-        <!-- <a href="/exercises/chapter_5">Chapter 5</a>
-        <a href="/exercises/chapter_6">Chapter 6</a> -->
+        <a href="/exercises/chapter_5">Chapter 5</a>
+        <a href="/exercises/chapter_6">Chapter 6</a>
     </ul>    
     <h1>Dictionary</h1>
     <ul>
@@ -14,8 +14,8 @@
         <!-- <a href="/lectures/chapter_2">Chapter 2</a>
         <a href="/lectures/chapter_3">Chapter 3</a> -->
         <a href="/dictionary/chapter_4">Chapter 4</a>     
-        <!-- <a href="/lectures/chapter_5">Chapter 5</a>     
-        <a href="/lectures/chapter_6">Chapter 6</a> -->
+        <a href="/dictionary/chapter_5">Chapter 5</a>     
+        <a href="/dictionary/chapter_6">Chapter 6</a>
     </ul>
 
     <!-- <h1>Lectures</h1>
@@ -58,7 +58,7 @@
         background-color: #156BAD;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
         height: 100vh;
     }

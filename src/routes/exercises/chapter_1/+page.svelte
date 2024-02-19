@@ -2,7 +2,7 @@
 	import Card from "$lib/ui/Card.svelte";
 	import WordGuesser from "$lib/ui/WordGuesser.svelte";
     import {months,colors,weekdays} from "$lib/constants/nouns"
-    import { positiveHavePhrase, negativeHavePhrase, interrogativeHavePhrase } from "$lib/generators/phrases";
+    import { positiveIywtHavePhrase, negativeIywtHavePhrase, interrogativeIywtHavePhrase } from "$lib/generators/phrases";
 	import PhraseGuesser from "$lib/ui/PhraseGuesser.svelte";
 
 </script>
@@ -21,13 +21,13 @@
     </Card>
 
     <Card titleSpanish="Tener+" titleEnglish="Have">
-        <PhraseGuesser phraseGenerator={positiveHavePhrase} />
+        <PhraseGuesser phraseGenerator={positiveIywtHavePhrase} />
     </Card>
     <Card titleSpanish="Tener-" titleEnglish="Haven't">
-        <PhraseGuesser phraseGenerator={negativeHavePhrase} />
+        <PhraseGuesser phraseGenerator={negativeIywtHavePhrase} />
     </Card>
     <Card titleSpanish="Tener?" titleEnglish="Have?">
-        <PhraseGuesser phraseGenerator={interrogativeHavePhrase} />
+        <PhraseGuesser phraseGenerator={interrogativeIywtHavePhrase} />
     </Card>
 </section>
 

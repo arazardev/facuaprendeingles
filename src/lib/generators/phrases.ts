@@ -1,4 +1,4 @@
-import { iYouWeThey } from "../constants/persons";
+import { iYouWeThey, heSheIt } from "../constants/persons";
 import { skills } from "../constants/verbs";
 import { randomItem } from "$lib/utils/utils";
 import { musicInstruments, clothes } from "../constants/nouns";
@@ -7,7 +7,7 @@ import { canToSpanish, englishArticle, haveToSpanish, wearToSpanish } from "./wo
 
 
 
-export function positiveHavePhrase():Phrase{
+export function positiveIywtHavePhrase():Phrase{
     const person = randomItem(iYouWeThey)
     const noun = randomItem(musicInstruments)
     const spanishNoun = randomItem(noun.spanish)
@@ -19,7 +19,7 @@ export function positiveHavePhrase():Phrase{
     return {english:englishPhrase,spanish:spanishPhrase}
 }
 
-export function negativeHavePhrase():Phrase{
+export function negativeIywtHavePhrase():Phrase{
     const person = randomItem(iYouWeThey)
     const noun = randomItem(musicInstruments)
     const spanishNoun = randomItem(noun.spanish)
@@ -33,7 +33,7 @@ export function negativeHavePhrase():Phrase{
     return phrase
 }
 
-export function interrogativeHavePhrase():Phrase{
+export function interrogativeIywtHavePhrase():Phrase{
     const person = randomItem(iYouWeThey)
     const noun = randomItem(musicInstruments)
     const spanishNoun = randomItem(noun.spanish)
@@ -116,3 +116,46 @@ export function interrogativeWearPhrase():Phrase{
 }
 
 
+
+
+
+
+export function positiveHsiHavePhrase():Phrase{
+    const person = randomItem(heSheIt)
+    const noun = randomItem(musicInstruments)
+    const spanishNoun = randomItem(noun.spanish)
+    const spanishPerson = randomItem(person.spanish)
+    let spanishHaveVerb = haveToSpanish(spanishPerson)
+    let article = englishArticle(noun.english)
+    let spanishPhrase: string = `${spanishPerson} ${spanishHaveVerb} un/una ${spanishNoun}`
+    let englishPhrase: string = `${person.english} has ${article} ${noun.english}`
+    return {english:englishPhrase,spanish:spanishPhrase}
+}
+
+export function negativeHsiHavePhrase():Phrase{
+    const person = randomItem(heSheIt)
+    const noun = randomItem(musicInstruments)
+    const spanishNoun = randomItem(noun.spanish)
+    const spanishPerson = randomItem(person.spanish)
+    let spanishHaveVerb = haveToSpanish(spanishPerson)
+    let article = englishArticle(noun.english)
+    let spanishPhrase: string = `${spanishPerson} no ${spanishHaveVerb} un/una ${spanishNoun}`
+    let englishPhrase: string = `${person.english} does not have ${article} ${noun.english}`
+    const phrase = {english:englishPhrase,spanish:spanishPhrase}
+    console.log(phrase)
+    return phrase
+}
+
+export function interrogativeHsiHavePhrase():Phrase{
+    const person = randomItem(heSheIt)
+    const noun = randomItem(musicInstruments)
+    const spanishNoun = randomItem(noun.spanish)
+    const spanishPerson = randomItem(person.spanish)
+    let spanishHaveVerb = haveToSpanish(spanishPerson)
+    let article = englishArticle(noun.english)
+    let spanishPhrase: string = `¿${spanishHaveVerb} ${spanishPerson} un/una ${spanishNoun}?`
+    let englishPhrase: string = `does ${person.english} have ${article} ${noun.english}?`
+    const phrase = {english:englishPhrase,spanish:spanishPhrase}
+    console.log(phrase)
+    return phrase
+}

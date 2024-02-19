@@ -6,3 +6,9 @@ export const iYouWeThey: Array<Word>=[
     {english:"we",spanish:["nosotros","nosotras"]},
     {english:"they",spanish:["ellos","ellas"]},
 ]
+
+export const heSheIt: Array<Word> = [
+    {english:"he",spanish:["el"]},
+    {english:"she",spanish:["ella"]},
+    {english:"it",spanish:["aquel"]}
+]

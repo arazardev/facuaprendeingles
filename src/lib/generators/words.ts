@@ -17,6 +17,9 @@ export function haveToSpanish(person:string):String{
     if (person==="tu"){
         verb = "tienes"
     }
+    if (person==="el" || person==="ella" || person==="aquel"){
+        verb = "tiene"
+    }
     return verb
 }
 

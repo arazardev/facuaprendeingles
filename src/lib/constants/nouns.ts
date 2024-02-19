@@ -135,3 +135,62 @@ export const furtnitures: Array<Word> = [
     {english: "shelf", spanish: ["estante"]},
     {english: "rug", spanish: ["alfombra"]}
 ]
+
+export const animals:Array<Word> = [
+    {"english": "dog", "spanish": ["perro"]},
+    {"english": "cat", "spanish": ["gato"]},
+    {"english": "horse", "spanish": ["caballo"]},
+    {"english": "bird", "spanish": ["pajaro"]},
+    {"english": "fish", "spanish": ["pez"]},
+    {"english": "rabbit", "spanish": ["conejo"]},
+    {"english": "cow", "spanish": ["vaca"]},
+    {"english": "sheep", "spanish": ["oveja"]},
+    {"english": "pig", "spanish": ["cerdo"]},
+    {"english": "chicken", "spanish": ["pollo"]}
+]
+
+export const animalCharacteristics: Array<Word> = [
+    {"english": "fur", "spanish": ["pelaje","pelo"]},
+    {"english": "feathers", "spanish": ["plumas"]},
+    {"english": "scales", "spanish": ["escamas"]},
+    {"english": "mane", "spanish": ["crin"]},
+    {"english": "horns", "spanish": ["cuernos"]},
+    {"english": "hooves", "spanish": ["pezuñas"]},
+    {"english": "gills", "spanish": ["agallas"]},
+    {"english": "wings", "spanish": ["alas"]},
+    {"english": "skin", "spanish": ["piel"]},
+    {"english": "beak", "spanish": ["pico"]},
+    {"english": "claws", "spanish": ["garras"]},
+    {"english": "teeth", "spanish": ["dientes"]},
+    {"english": "tongue", "spanish": ["lengua"]},
+    {"english": "antennae", "spanish": ["antenas"]},
+    {"english": "tail", "spanish": ["cola"]},
+    {"english": "tentacles", "spanish": ["tentáculos"]},
+    {"english": "skeleton", "spanish": ["esqueleto"]},
+    {"english": "fins", "spanish": ["aletas"]}
+]
+
+
+export const foodAndDrinks: Array<Word> = [
+    {"english": "water", "spanish": ["agua"]},
+    {"english": "bread", "spanish": ["pan"]},
+    {"english": "rice", "spanish": ["arroz"]},
+    {"english": "coffee", "spanish": ["café"]},
+    {"english": "tea", "spanish": ["té"]},
+    {"english": "milk", "spanish": ["leche"]},
+    {"english": "orange juice", "spanish": ["jugo de naranja"]},
+    {"english": "apple", "spanish": ["manzana"]},
+    {"english": "banana", "spanish": ["platano","banana"]},
+    {"english": "eggs", "spanish": ["huevos"]},
+    {"english": "cheese", "spanish": ["queso"]},
+    {"english": "chicken", "spanish": ["pollo"]},
+    {"english": "beef", "spanish": ["carne de res"]},
+    {"english": "salad", "spanish": ["ensalada"]},
+    {"english": "soup", "spanish": ["sopa"]}
+]
+
+export const eatMoments: Array<Word> = [
+    {"english": "breakfast", "spanish": ["desayuno"]},
+    {"english": "lunch", "spanish": ["almuerzo"]},
+    {"english": "dinner", "spanish": ["cena"]}
+]

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Card from "$lib/ui/Card.svelte";
 	import WordGuesser from "$lib/ui/WordGuesser.svelte";
     import {houseParts, furtnitures} from "$lib/constants/nouns"
@@ -6,7 +6,7 @@
 	// import PhraseGuesser from "$lib/ui/PhraseGuesser.svelte";
     // import { positiveWearPhrase, negativeWearPhrase, interrogativeWearPhrase } from "$lib/generators/phrases";
     import Qa from "$lib/ui/QA.svelte";
-    import { qaPrepositions } from "$lib/constants/phrases";
+    import { qaPrepositions } from "$lib/constants/qa"
 
 </script>
 
